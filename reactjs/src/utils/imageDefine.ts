@@ -1,0 +1,72 @@
+export const imageHeaders = {
+  headerTableIcon2d:
+    'https://raw.githack.com/hoanghd218/p3dresource/main/img/header-table-icon/2d.png',
+  headerTableIconAssembly:
+    'https://raw.githack.com/hoanghd218/p3dresource/main/img/header-table-icon/assembly.png',
+  headerTableIconCost:
+    'https://raw.githack.com/hoanghd218/p3dresource/main/img/header-table-icon/cost.png',
+  headerTableIconMaterials:
+    'https://raw.githack.com/hoanghd218/p3dresource/main/img/header-table-icon/materials.png',
+  headerTableIconSchedule:
+    'https://raw.githack.com/hoanghd218/p3dresource/main/img/header-table-icon/schedule.png',
+  headerTableIcon2dNew:
+    'https://raw.githack.com/hoanghd218/p3dresource/main/new-images/view-2d.png',
+  headerTableIconAssemblyNew:
+    'https://raw.githack.com/hoanghd218/p3dresource/main/new-images/assembly-code.png',
+  headerTableIconCostNew:
+    'https://raw.githack.com/hoanghd218/p3dresource/main/new-images/cost-breakdown.png',
+  headerTableIconMaterialsNew:
+    'https://raw.githack.com/hoanghd218/p3dresource/main/new-images/material.png',
+  headerTableIconScheduleNew:
+    'https://raw.githack.com/hoanghd218/p3dresource/main/new-images/elements.png',
+};
+
+export const icons = {
+  gearIcon:
+    'https://raw.githack.com/hoanghd218/p3dresource/main/img/right-side-bar-icon/gear.png',
+  arrowIcon:
+    'https://raw.githack.com/hoanghd218/p3dresource/main/new-images/arrow.png',
+  logoIcon: 'https://raw.githack.com/hoanghd218/p3dresource/main/img/logo.jpg',
+  logoIconNew:
+    'https://raw.githack.com/hoanghd218/p3dresource/main/new-images/p3dlogo.png',
+  home: 'https://raw.githack.com/hoanghd218/p3dresource/main/new-images/home.png',
+  // buildingIcon: 'https://raw.githack.com/hoanghd218/p3dresource/main/img/building.jpg',
+  revitIcon:
+    'https://raw.githack.com/hoanghd218/p3dresource/main/img/revit.png',
+  scheduleIcon:
+    'https://raw.githack.com/hoanghd218/p3dresource/main/img/icon/schedule.png',
+  exportCsvIcon:
+    'https://raw.githack.com/hoanghd218/p3dresource/main/img/icon/export-csv-icon-20.jpg',
+  stageIcon:
+    'https://raw.githack.com/hoanghd218/p3dresource/main/img/icon/stage.png',
+  cashFlowIcon:
+    'https://raw.githack.com/hoanghd218/p3dresource/main/img/icon/cash-flow.png',
+  compareIcon:
+    'https://raw.githack.com/hoanghd218/p3dresource/main/img/icon/compare.png',
+  procoreIcon:
+    'https://raw.githack.com/hoanghd218/p3dresource/main/img/icon/procore.png',
+  microsoftIcon:
+    'https://raw.githack.com/hoanghd218/p3dresource/main/img/icon/microsoft-project.png',
+  p6Icon:
+    'https://raw.githack.com/hoanghd218/p3dresource/main/img/icon/Primavera.png',
+  exportIcon:
+    'https://raw.githack.com/hoanghd218/p3dresource/main/img/icon/export.png',
+  residencyIcon:
+    'https://raw.githack.com/hoanghd218/p3dresource/b270ddb5c2cf78b44f74d4c3ef42f26284c2c026/img/icon/residency-icon.png',
+  dollorIcon:
+    'https://raw.githack.com/hoanghd218/p3dresource/b270ddb5c2cf78b44f74d4c3ef42f26284c2c026/img/icon/dollar-icon.png',
+  industryIcon:
+    'https://raw.githack.com/hoanghd218/p3dresource/b270ddb5c2cf78b44f74d4c3ef42f26284c2c026/img/icon/industry-icon.png',
+  buildingIcon:
+    'https://raw.githack.com/hoanghd218/p3dresource/b270ddb5c2cf78b44f74d4c3ef42f26284c2c026/img/icon/building-icon.png',
+  constructIcon:
+    'https://raw.githack.com/hoanghd218/p3dresource/b270ddb5c2cf78b44f74d4c3ef42f26284c2c026/img/icon/construction-icon.png',
+  standardIcon:
+    'https://github.com/hoanghd218/p3dresource/blob/b270ddb5c2cf78b44f74d4c3ef42f26284c2c026/img/icon/standard-icon.png',
+  unionIocn:
+    'https://raw.githack.com/hoanghd218/p3dresource/b270ddb5c2cf78b44f74d4c3ef42f26284c2c026/img/icon/union-icon.png',
+  buildingResidetalIcon:
+    'https://raw.githack.com/hoanghd218/p3dresource/b270ddb5c2cf78b44f74d4c3ef42f26284c2c026/img/icon/building-residental-icon.png',
+  federalIcon:
+    'https://raw.githack.com/hoanghd218/p3dresource/b270ddb5c2cf78b44f74d4c3ef42f26284c2c026/img/icon/federal-icon.png',
+};

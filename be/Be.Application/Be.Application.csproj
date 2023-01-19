@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Remove="Categories\Dtos\**" />
+		<Compile Remove="DownloadHistory\**" />
+		<Compile Remove="PostCategories\**" />
+		<EmbeddedResource Remove="Categories\Dtos\**" />
+		<EmbeddedResource Remove="DownloadHistory\**" />
+		<EmbeddedResource Remove="PostCategories\**" />
+		<None Remove="Categories\Dtos\**" />
+		<None Remove="DownloadHistory\**" />
+		<None Remove="PostCategories\**" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Amazon.AspNetCore.Identity.Cognito" Version="3.0.0" />
+		<PackageReference Include="Autodesk.Forge" Version="1.9.0" />
+		<PackageReference Include="AWSSDK.CognitoIdentityProvider" Version="3.7.101.39" />
+		<PackageReference Include="AWSSDK.SimpleEmail" Version="3.7.100.44" />
+		<PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+		<PackageReference Include="System.DirectoryServices.Protocols" Version="7.0.0" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.17.0" />
+		<PackageReference Include="System.Security.Permissions" Version="7.0.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Be.Common\Be.Common.csproj" />
+		<ProjectReference Include="..\Be.Infrustructure\Be.Infrustructure.csproj" />
+	</ItemGroup>
+</Project>
