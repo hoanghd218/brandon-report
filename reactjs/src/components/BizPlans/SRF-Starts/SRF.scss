@@ -1,17 +1,17 @@
-.biz-plan-tbl{
+.srf-starts{
     .biz-plan-column{
-        min-width: 750px;
+        min-width: 550px;
     }
     .spec{
-        min-width: 100px;
+        min-width: 140px;
     }
     .comunity{
         min-width: 210px;
         width: 210px;
     }
     .backlog{
-        min-width: 190px;
-        width: 190px;
+        min-width: 150px;
+        width: 150px;
     }
     .gm{
         min-width: 75px;
@@ -33,6 +33,13 @@
     .ant-table-content{
         overflow-x: scroll;
     }
+    tfoot td{
+        border-top: 1px solid #ccc;
+        text-align: center;
+    }
+    // td, th{
+    //     text-align: center;
+    // }
  table{
     tr:nth-child(3n+3) td{  border-bottom: 1px solid #ccc;}
  } 

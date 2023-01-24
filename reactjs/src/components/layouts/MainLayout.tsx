@@ -151,7 +151,7 @@ export default function MainLayout() {
             <div className="flex justify-between">
               <div className="flex space-x-4">
               <div className="flex items-center">
-                <button className="mobile-menu-button" onClick={()=>collapseSidebar()}>
+                <button className="mobile-menu-button pl-1" onClick={()=>collapseSidebar()} style={{color: "#0098e5"}}>
                   <svg
                     className="w-6 h-6"
                     xmlns="http://www.w3.org/2000/svg"
@@ -215,6 +215,7 @@ export default function MainLayout() {
         style={{
           display: "flex",
           direction: isRTL ? "rtl" : "ltr",
+          minHeight: "calc(100vh - 64px)"
         }}
         // className="h-screen relative"
       >
@@ -257,7 +258,7 @@ export default function MainLayout() {
                   // }
                 >
                   <MenuItem component={<Link to="/biz-plan" />}>Biz Plan</MenuItem>
-                  <MenuItem>Menu Item 2</MenuItem>
+                  <MenuItem component={<Link to="/biz-plan2" />}>Menu Item 2</MenuItem>
                   <MenuItem>Menu Item 3</MenuItem>
                 </SubMenu>
                 <SubMenu label="Sub Menu" icon={<Global />}>

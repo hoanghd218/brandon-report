@@ -1,5 +1,6 @@
 import { Card, Tabs, TabsProps } from "antd";
-import BizPlanTable2 from "../components/BizPlans/BizPlanTable2";
+import BizPlanTable2 from "../components/BizPlans/BussinessPlan/BizPlanTable2";
+import SFRStart from "../components/BizPlans/SRF-Starts/SFRStart";
 export default function BizPlanPage() {
   const items: TabsProps["items"] = [
     {
@@ -9,12 +10,12 @@ export default function BizPlanPage() {
     },
     {
       key: "2",
-      label: `Tab 2`,
-      children: `Content of Tab Pane 2`,
+      label: `SFR Starts`,
+      children: <SFRStart />,
     },
     {
       key: "3",
-      label: `Tab 3`,
+      label: `Expenses`,
       children: `Content of Tab Pane 3`,
     },
   ];
