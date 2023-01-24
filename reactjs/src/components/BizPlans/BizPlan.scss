@@ -1,0 +1,39 @@
+.biz-plan-tbl{
+    .biz-plan-column{
+        min-width: 750px;
+    }
+    .spec{
+        min-width: 100px;
+    }
+    .comunity{
+        min-width: 210px;
+        width: 210px;
+    }
+    .backlog{
+        min-width: 190px;
+        width: 190px;
+    }
+    .gm{
+        min-width: 75px;
+        width: 75px;
+    }
+    .avg{
+        min-width: 120px;
+        width: 120px;
+    }
+    .plan{
+        min-width: 170px;
+    }
+    .ofUnits{
+        min-width: 90px;
+    }
+    .month-col{
+        min-width: 100px;
+    }
+    .ant-table-content{
+        overflow-x: scroll;
+    }
+ table{
+    tr:nth-child(3n+3) td{  border-bottom: 1px solid #ccc;}
+ } 
+}

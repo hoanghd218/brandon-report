@@ -7,7 +7,7 @@ import {
   SubMenu,
   useProSidebar
 } from "react-pro-sidebar";
-import { Outlet, useNavigate } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 import { BarChart } from "../../icons/BarChart";
 import { Book } from "../../icons/Book";
 import { Calendar } from "../../icons/Calendar";
@@ -216,7 +216,7 @@ export default function MainLayout() {
           display: "flex",
           direction: isRTL ? "rtl" : "ltr",
         }}
-        className="h-screen relative"
+        // className="h-screen relative"
       >
         <Sidebar
           image="https://user-images.githubusercontent.com/25878302/144499035-2911184c-76d3-4611-86e7-bc4e8ff84ff5.jpg"
@@ -248,42 +248,42 @@ export default function MainLayout() {
               </div>
               <Menu menuItemStyles={menuItemStyles}>
                 <SubMenu
-                  label="Charts"
+                  label="Plan"
                   icon={<BarChart />}
-                  suffix={
-                    <Badge variant="danger" shape="circle">
-                      6
-                    </Badge>
-                  }
+                  // suffix={
+                  //   <Badge variant="danger" shape="circle">
+                  //     6
+                  //   </Badge>
+                  // }
                 >
-                  <MenuItem> Pie charts</MenuItem>
-                  <MenuItem> Line charts</MenuItem>
-                  <MenuItem> Bar charts</MenuItem>
+                  <MenuItem component={<Link to="/biz-plan" />}>Biz Plan</MenuItem>
+                  <MenuItem>Menu Item 2</MenuItem>
+                  <MenuItem>Menu Item 3</MenuItem>
                 </SubMenu>
-                <SubMenu label="Maps" icon={<Global />}>
-                  <MenuItem> Google maps</MenuItem>
-                  <MenuItem> Open street maps</MenuItem>
+                <SubMenu label="Sub Menu" icon={<Global />}>
+                  <MenuItem>Menu Item 1</MenuItem>
+                  <MenuItem>Menu Item 2</MenuItem>
                 </SubMenu>
-                <SubMenu label="Theme" icon={<InkBottle />}>
-                  <MenuItem> Dark</MenuItem>
-                  <MenuItem> Light</MenuItem>
+                <SubMenu label="Sub Menu 2" icon={<InkBottle />}>
+                  <MenuItem>Menu Item 1</MenuItem>
+                  <MenuItem>Menu Item 2</MenuItem>
                 </SubMenu>
-                <SubMenu label="Components" icon={<Diamond />}>
-                  <MenuItem> Grid</MenuItem>
-                  <MenuItem> Layout</MenuItem>
-                  <SubMenu label="Forms">
-                    <MenuItem> Input</MenuItem>
-                    <MenuItem> Select</MenuItem>
-                    <SubMenu label="More">
-                      <MenuItem> CheckBox</MenuItem>
-                      <MenuItem> Radio</MenuItem>
+                <SubMenu label="Sub Menu 3" icon={<Diamond />}>
+                  <MenuItem>Menu Item 1</MenuItem>
+                  <MenuItem>Menu Item 2</MenuItem>
+                  <SubMenu label="Sub Menu 4">
+                    <MenuItem>Menu Item 1</MenuItem>
+                    <MenuItem>Menu Item2</MenuItem>
+                    <SubMenu label="Sub Menu 5">
+                      <MenuItem>Menu Item 1</MenuItem>
+                      <MenuItem>Menu Item 2</MenuItem>
                     </SubMenu>
                   </SubMenu>
                 </SubMenu>
-                <SubMenu label="E-commerce" icon={<ShoppingCart />}>
-                  <MenuItem> Product</MenuItem>
-                  <MenuItem> Orders</MenuItem>
-                  <MenuItem> Credit card</MenuItem>
+                <SubMenu label="Sub Menu" icon={<ShoppingCart />}>
+                  <MenuItem>Menu Item 1</MenuItem>
+                  <MenuItem>Menu Item 2</MenuItem>
+                  <MenuItem>Menu Item 3</MenuItem>
                 </SubMenu>
               </Menu>
 
@@ -311,16 +311,16 @@ export default function MainLayout() {
                   icon={<Calendar />}
                   suffix={<Badge variant="success">New</Badge>}
                 >
-                  Calendar
+                  Menu 1
                 </MenuItem>
-                <MenuItem icon={<Book />}>Documentation</MenuItem>
-                <MenuItem icon={<Service />}> Examples</MenuItem>
+                <MenuItem icon={<Book />}>Menu 2</MenuItem>
+                <MenuItem icon={<Service />}>Menu 3</MenuItem>
               </Menu>
             </div>
             {/* <SidebarFooter collapsed={collapsed} /> */}
           </div>
         </Sidebar>
-        <main>
+        <main style={{"flexGrow":"1", "overflow":"auto"}}>
           <Outlet />
         </main>
       </div>
